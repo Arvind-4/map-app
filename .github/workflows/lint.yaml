@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: Linting and Formatting
 
 on:
   push:
@@ -26,4 +26,6 @@ jobs:
       run: |
         npm install -g pnpm
         pnpm install
+        pnpm format
+        pnpm build
         pnpm lint
